@@ -4,12 +4,12 @@ const ManageOrders = () => {
     const [orders, setOrders] = useState([]);
     const [value, setValue] = useState('');
     useEffect(() => {
-        fetch('http://localhost:5000/myOrders')
+        fetch('https://haunted-cemetery-18562.herokuapp.com/myOrders')
             .then(res => res.json())
             .then(data => setOrders(data));
     }, []);
     const handleDelete = id => {
-        const url = `http://localhost:5000/myOrders/${id}`;
+        const url = `https://haunted-cemetery-18562.herokuapp.com/myOrders/${id}`;
         const proceed = window.confirm('Are you sure?');
         if (proceed) {
             fetch(url, {
@@ -30,7 +30,7 @@ const ManageOrders = () => {
     }
     
     const handlePending = id =>{
-        const url = `http://localhost:5000/myOrders/${id}`;
+        const url = `https://haunted-cemetery-18562.herokuapp.com/myOrders/${id}`;
         fetch(url, {
             method: 'PUT',
             headers: {

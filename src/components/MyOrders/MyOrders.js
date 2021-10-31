@@ -6,7 +6,7 @@ const MyOrders = () => {
     const {user} = useAuth();
     const [orders, setOrders] = useState([]);
     useEffect(() => {
-        fetch('http://localhost:5000/myOrders')
+        fetch('https://haunted-cemetery-18562.herokuapp.com/myOrders')
             .then(res => res.json())
             .then(data => {
                 const mydata=data.filter(myorders=>myorders.email==user.email);
@@ -14,7 +14,7 @@ const MyOrders = () => {
             });
     }, [])
     const handleDelete = id => {
-        const url = `http://localhost:5000/myOrders/${id}`;
+        const url = `https://haunted-cemetery-18562.herokuapp.com/myOrders/${id}`;
         const proceed = window.confirm('Are you sure?');
         if (proceed) {
             fetch(url, {

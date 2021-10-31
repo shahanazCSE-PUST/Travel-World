@@ -7,20 +7,6 @@ const Service = ({ service }) => {
     // const {service} = props;
     const { _id, name, description, img } = service;
     const { serviceId } = useParams();
-    // const handleOrder = () =>{
-    //     fetch(`http://localhost:5000/services/${serviceId}`,{
-    //         method: 'POST',
-    //         headers: {
-    //             'content-type': 'application/json'
-    //         },
-    //         body: JSON.stringify(service)
-    //     })
-    //     .then(res => res.json())
-    //     .then(result =>{
-    //         console.log(result);
-          
-    //     })
-    //     }
     return (
         <div className="service my-card">
             <div className="img-wrapper">
