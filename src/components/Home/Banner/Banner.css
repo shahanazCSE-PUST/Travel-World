@@ -1,0 +1,15 @@
+.my-height{
+    height: 35rem;
+}
+
+/* Make it responsive */
+@media only screen and (max-width:688px) {
+    .my-height{
+        height: 100vw;
+    }
+}
+@media only screen and (min-width:689px) and (max-width: 991px){
+    .my-height{
+        height: 100vw;
+    }
+}

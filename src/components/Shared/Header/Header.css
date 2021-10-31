@@ -1,0 +1,10 @@
+.bg-color{
+    background-color: white;
+}
+.logo-tittle {
+    font-family: 'Abril Fatface', cursive;
+    letter-spacing: 1px;
+}
+.logo-tittle span{
+    color:yellowgreen
+}

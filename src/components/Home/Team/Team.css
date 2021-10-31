@@ -1,0 +1,29 @@
+.team-container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 20px;
+}
+
+.iconbar i{
+    color:white;
+    background-color: #1C613A;
+    padding: 9px;
+    margin-left: 6px;
+
+}
+.iconbar i:hover{
+    color:white;
+    background-color:black;
+}
+
+/* Make it responsive */
+@media only screen and (max-width:688px) {
+    .team-container{
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+@media only screen and (min-width:689px) and (max-width: 991px){
+    .team-container{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
